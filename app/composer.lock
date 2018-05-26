@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cdd39276853a84a4bacb09231ce34a76",
+    "content-hash": "4bcda50b65c5217d9899b8a48736c457",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1833,6 +1833,67 @@
             "description": "The Illuminate View package.",
             "homepage": "https://laravel.com",
             "time": "2018-05-17T13:48:32+00:00"
+        },
+        {
+            "name": "laravel-doctrine/fluent",
+            "version": "1.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-doctrine/fluent.git",
+                "reference": "337b82d49d83370bf51afa12004d3c082bd9c462"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-doctrine/fluent/zipball/337b82d49d83370bf51afa12004d3c082bd9c462",
+                "reference": "337b82d49d83370bf51afa12004d3c082bd9c462",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/inflector": "^1.1",
+                "doctrine/orm": "2.5.*|2.6.*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "beberlei/doctrineextensions": "~1.0",
+                "gedmo/doctrine-extensions": "^2.4",
+                "mockery/mockery": "~0.9",
+                "nesbot/carbon": "*",
+                "phpunit/phpunit": "~4.0",
+                "zf1/zend-date": "~1.12"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LaravelDoctrine\\Fluent\\": "src/",
+                    "Gedmo\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guido Contreras Woda",
+                    "email": "guiwoda@gmail.com"
+                },
+                {
+                    "name": "Patrick Brouwers",
+                    "email": "patrick@maatwebsite.nl"
+                }
+            ],
+            "description": "A fluent PHP mapping driver for Doctrine2.",
+            "keywords": [
+                "data mapper",
+                "database",
+                "doctrine",
+                "fluent",
+                "laravel",
+                "mapping driver",
+                "mappings",
+                "orm"
+            ],
+            "time": "2018-02-27T12:11:42+00:00"
         },
         {
             "name": "laravel-doctrine/orm",
