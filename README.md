@@ -1,4 +1,4 @@
-## Lumen, doctrine and oci8 microframework.
+## Lumen, Doctrine and oci8 microframework.
 [![Build Status](https://travis-ci.org/vhbfernandes/lumen-doctrine-base.png?branch=master)](https://travis-ci.org/vhbfernandes/lumen-doctrine-base)
 
 This repo was created to work as a base for PHP microsservices on OracleDB 12c. 
@@ -32,3 +32,6 @@ docker-compose up -d
 ```
 
 ##### ~~Forever Beta Docs~~ //TODO fix
+
+##### Note:
+Travis builds run on a MySQL container instead of Oracle because of reasons.

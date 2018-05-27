@@ -12,7 +12,8 @@
         "laravel-doctrine/fluent": "^1.1",
         "dingo/api": "2.0.0-alpha2",
         "guzzlehttp/guzzle": "^6.3",
-        "lukasoppermann/http-status": "^2.0"
+        "lukasoppermann/http-status": "^2.0",
+        "laravel-doctrine/migrations": "^1.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -2,10 +2,7 @@ sudo: required
 
 services:
     - docker
-
-language: php
-php:
-    - 7.2.5
+    - mysql
 
 env:
     - DOCKER_COMPOSE_VERSION=1.21.0
@@ -15,6 +12,7 @@ before_install:
     - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
     - chmod +x docker-compose
     - sudo mv docker-compose /usr/local/bin
+    - mysql -e 'CREATE DATABASE example;'
 
 script:
-    - docker-compose up -d
+    - docker-compose -f docker-compose-qa.yml up -d
