@@ -22,7 +22,7 @@ abstract class TestCase extends Laravel\Lumen\Testing\TestCase implements Httpst
 
         //creating a guzzle client gives us more flexibility to work on tests than lumen's own http client
         $this->client = new GuzzleHttp\Client([
-            'base_uri' => 'http://gateway.quantum.local',
+            'base_uri' => 'http://localhost',
             'exceptions' => false,
         ]);
 
