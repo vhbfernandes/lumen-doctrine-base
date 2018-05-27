@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-class ExampleController extends Controller
+use Laravel\Lumen\Routing\Controller as BaseController;
+
+class ApiController extends BaseController
 {
+    use \Dingo\Api\Routing\Helpers;
     /**
      * Create a new controller instance.
      *

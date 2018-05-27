@@ -2,6 +2,8 @@ FROM victorhbfernandes/php-fpm-oracle:7.2.5
 
 RUN apt-get update && apt-get -qqy install \
    nginx \
+   nano \
+   htop \
    supervisor \
    git \
    zip
@@ -19,9 +21,5 @@ COPY conf/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 RUN mkdir /app
 WORKDIR /app
-COPY ./src /app
-
-RUN composer install
-RUN chmod 777 -R /app/storage
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
