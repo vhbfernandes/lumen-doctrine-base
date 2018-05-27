@@ -1,5 +1,6 @@
 ## Lumen, Doctrine and oci8 microframework.
 [![Build Status](https://travis-ci.org/vhbfernandes/lumen-doctrine-base.png?branch=master)](https://travis-ci.org/vhbfernandes/lumen-doctrine-base)
+[![Coverage Status](https://coveralls.io/repos/github/vhbfernandes/lumen-doctrine-base/badge.svg)](https://coveralls.io/github/vhbfernandes/lumen-doctrine-base)
 
 This repo was created to work as a base for PHP microsservices on OracleDB 12c. 
 

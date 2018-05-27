@@ -16,4 +16,5 @@ before_install:
 
 script:
     - docker-compose -f docker-compose-qa.yml up -d
-    - docker exec -it service.local /usr/local/bin/phpunit
+#unit tests disabled for now
+#    - docker exec -it service.local /usr/local/bin/phpunit
