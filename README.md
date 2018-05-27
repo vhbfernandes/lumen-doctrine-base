@@ -32,6 +32,3 @@ docker-compose up -d
 ```
 
 ##### ~~Forever Beta Docs~~ //TODO fix
-
-##### Note:
-Travis builds run on a MySQL container instead of Oracle because of reasons.
