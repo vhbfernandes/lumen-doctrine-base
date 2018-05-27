@@ -25,7 +25,5 @@ WORKDIR /app
 COPY ./src /app
 RUN composer install
 RUN php artisan doctrine:migrations:migrate
-RUN phpunit
-
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
