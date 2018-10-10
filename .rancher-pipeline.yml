@@ -1,0 +1,12 @@
+stages:
+- name: Build
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: victorhbfernandes/lumen-doctrine-base
+  when:
+    branch:
+      include:
+      - master
+timeout: 60
